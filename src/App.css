@@ -1,0 +1,15 @@
+.SectionHelper{
+  min-width: 53vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40;
+}
+.SubSection{
+  min-width: 16vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
