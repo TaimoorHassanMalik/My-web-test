@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css'
 const QuestionSection = (props) => {
     return (
         
-            <section class="section" style={{ padding: 3, marginTop: 30 }}>
+            <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 30 }}>
                 <div class="container">
                     <h1 class="title is-5 has-text-weight-bold">{props.Question}</h1>
                     <h2 class="subtitle">

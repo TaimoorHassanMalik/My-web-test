@@ -1,8 +1,8 @@
 
 import React from 'react';
 import 'bulma/css/bulma.css'
-import TimeTabs from './TimeTabs'
-import QuestionSection from './QuestionSection'
+import TimeTabs from './components/TimeTabs'
+import QuestionSection from './components/QuestionSection'
 
 const App = (props) => {
 
@@ -19,7 +19,7 @@ const App = (props) => {
       </p>
       {/* </nav> */}
 
-      <section class="section" style={{ padding: 3 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3 }}>
         <article class="media">
           <figure class="media-left">
             <h1 class="title">Fav Street Food</h1>
@@ -38,11 +38,11 @@ const App = (props) => {
         </article>
       </section>
 
-      <div className="buttons is-centered" style={{ padding: 3, marginTop: 15 }}>
+      <div className="buttons is-centered" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 15 }}>
         <button className="button is-info is-large" onClick={clickHandler}>25% off entire order today</button>
       </div>
 
-      <section class="section" style={{ padding: 3 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3 }}>
         <div class="container">
           <h1 class="title is-6 has-text-weight-bold"> No of guests</h1>
           <h2 class="subtitle">
@@ -84,7 +84,7 @@ const App = (props) => {
         </div>
       </section>
 
-      <section class="section" style={{ padding: 3, marginTop: 10 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 10 }}>
         <nav class="level">
           <div class="level-left">
             <div class="level-item">
@@ -112,7 +112,7 @@ const App = (props) => {
         </nav>
       </section>
 
-      <section class="section" style={{ padding: 3, marginTop: 20 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 20 }}>
         <div class="container">
           <h1 class="title is-6 has-text-weight-bold">Slots available</h1>
           <h2 class="subtitle" style={{ marginTop: 20 }}>
@@ -129,7 +129,7 @@ const App = (props) => {
       </nav>
 
 
-      <section class="section" style={{ padding: 3 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3 }}>
         <div class="container">
           <h1 class="title is-6 has-text-weight-bold">Special Instructions</h1>
           <h2 class="subtitle is-6 has-text-justified">
@@ -145,7 +145,7 @@ const App = (props) => {
         <button className="button is-info is-large" onClick={clickHandler}>Confirm Appointment</button>
       </div>
 
-      <section class="section" style={{ padding: 3, marginTop: 20 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 20 }}>
         <div class="container">
           <h2 class="subtitle is-6 has-text-justified">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -153,7 +153,7 @@ const App = (props) => {
         </div>
       </section>
 
-      <section class="section" style={{ padding: 3, marginTop: 30 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 30 }}>
         <div class="container">
           <h1 class="title is-6 has-text-weight-bold">Personal Safety Standards</h1>
           <h2 class="subtitle" style={{ marginTop: 10 }}>
@@ -187,7 +187,7 @@ const App = (props) => {
         </div>
       </section>
 
-      <section class="section" style={{ padding: 3, marginTop: 40 }}>
+      <section class="section" style={{ paddingTop: 3, paddingBottom: 3, marginTop: 40 }}>
         <div className='SectionHelper'>
           <div className='SubSection'>
             <img alt='' src={require('./assets/call.png')} />
