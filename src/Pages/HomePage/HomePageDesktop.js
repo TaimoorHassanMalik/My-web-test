@@ -14,9 +14,9 @@ const AppointmentSection = styled.section`
     `;
 
 const AppointmentItem = styled.section`
-    min-width:260px;
-    height:270px;
-    margin-right:2px;
+    min-width:360px;
+    height:350px;
+    margin-right:2px; 
     `;
 
 const HomePageDesktop = (props) => {
@@ -91,151 +91,169 @@ const HomePageDesktop = (props) => {
                 </div>
             </section>
 
-            <section className="section">
+
+
+            <section className="section py-0 px-0">
                 <div className="container">
-                    <div className='columns is-mobile'>
-                        <div className='column is-9'>
-                            <div className="tile is-ancestor">
+                    <AppointmentSection>
+                        <AppointmentItem>
+                            <section className="section py-0 px-0">
+                                <div className="container">
+                                    <div className='columns is-mobile py-0 px-0 pl-4'>
+                                        <div className='column'>
+                                            <div className="tile is-ancestor">
 
-                                <div className="tile is-parent">
-                                    <article className="tile is-child box px-0 py-0">
-                                        <figure className='image is-16by9'>
-                                            <img src={require('../../assets/hair1.png')} alt='' />
-                                        </figure>
-                                        <nav className="level is-mobile mb-1 mt-1 px-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <p className="subtitle is-5">
-                                                        <strong>Salon</strong>
-                                                    </p>
+                                                <div className="tile is-parent">
+                                                    <article className="tile is-child box px-0 py-0">
+                                                        <figure className='image is-16by9'>
+                                                            <img src={require('../../assets/hair1.png')} alt='' />
+                                                        </figure>
+                                                        <nav className="level is-mobile mb-1 mt-1 px-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-5">
+                                                                        <strong>Salon</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <span className="icon">
+                                                                    <i className="fas fa-star" color='orange'></i>
+                                                                </span>
+                                                                <p className="subtitle is-6">4.9(365)</p>
+                                                            </div>
+                                                        </nav>
+                                                        <p className="subtitle is-6 mb-0 px-2">Women</p>
+
+                                                        <nav className="level is-mobile mb-0 px-2">
+                                                            <div className="level-left">
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <p className="subtitle is-6">4 ml</p>
+                                                            </div>
+                                                        </nav>
+
+                                                        <nav className="level is-mobile mb-1 px-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <img alt='' src={require('../../assets/location.png')} />
+                                                                </div>
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-6" style={{ fontSize: 12 }}>5922 Tony Highway Dallas</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                    <span className="icon" >
+                                                                        <i className="fa fa-share" color='#037ffc'></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+
+                                                        <nav className="level is-mobile px-2 pb-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <span className="icon">
+                                                                        <i className="fa fa-clock-o" color='#037ffc'></i>
+                                                                    </span>
+                                                                </div>
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-6" style={{ color: '#037ffc' }}>03:00 pm (in 4 hrs)</p>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+                                                    </article>
                                                 </div>
                                             </div>
-                                            <div className="level-right">
-                                                <span className="icon">
-                                                    <i className="fas fa-star" color='orange'></i>
-                                                </span>
-                                                <p className="subtitle is-6">4.9(365)</p>
-                                            </div>
-                                        </nav>
-                                        <p className="subtitle is-6 mb-0 px-2">Women</p>
+                                        </div>
 
-                                        <nav className="level is-mobile mb-0 px-2">
-                                            <div className="level-left">
-                                            </div>
-                                            <div className="level-right">
-                                                <p className="subtitle is-6">4 ml</p>
-                                            </div>
-                                        </nav>
-
-                                        <nav className="level is-mobile mb-5 px-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <img alt='' src={require('../../assets/location.png')} />
-                                                </div>
-                                                <div className="level-item">
-                                                    <p className="subtitle is-6" style={{ fontSize: 12 }}>5922 Tony Highway Dallas</p>
-                                                </div>
-                                            </div>
-                                            <div className="level-right">
-                                                <div className="level-item">
-                                                    <span className="icon" >
-                                                        <i className="fa fa-share" color='#037ffc'></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </nav>
-
-                                        <nav className="level is-mobile px-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <span className="icon">
-                                                        <i className="fa fa-clock-o" color='#037ffc'></i>
-                                                    </span>
-                                                </div>
-                                                <div className="level-item">
-                                                    <p className="subtitle is-6" style={{ color: '#037ffc' }}>03:00 pm (in 4 hrs)</p>
-                                                </div>
-                                            </div>
-                                        </nav>
-
-
-
-                                    </article>
+                                    </div>
                                 </div>
+                            </section>
+                        </AppointmentItem>
 
+                        <AppointmentItem>
+                            <section className="section py-0 px-0">
+                                <div className="container">
+                                    <div className='columns is-mobile py-0 px-0 pl-4'>
+                                        <div className='column'>
+                                            <div className="tile is-ancestor">
 
+                                                <div className="tile is-parent">
+                                                    <article className="tile is-child box px-0 py-0">
+                                                        <figure className='image is-16by9'>
+                                                            <img src={require('../../assets/gym2.png')} alt='' />
+                                                        </figure>
+                                                        <nav className="level is-mobile mb-1 mt-1 px-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-5">
+                                                                        <strong>Body Gain</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <span className="icon">
+                                                                    <i className="fas fa-star" color='orange'></i>
+                                                                </span>
+                                                                <p className="subtitle is-6">4.9(365)</p>
+                                                            </div>
+                                                        </nav>
+                                                        <p className="subtitle is-6 mb-0 px-2">Men</p>
 
-                                <div className="tile is-parent">
-                                    <article className="tile is-child box px-0 py-0">
-                                        <figure className='image is-16by9'>
-                                            <img src={require('../../assets/gym2.png')} alt='' />
-                                        </figure>
-                                        <nav className="level is-mobile mb-1 mt-1 px-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <p className="subtitle is-5">
-                                                        <strong>Body Gain</strong>
-                                                    </p>
+                                                        <nav className="level is-mobile mb-0 px-2">
+                                                            <div className="level-left">
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <p className="subtitle is-6">4 ml</p>
+                                                            </div>
+                                                        </nav>
+
+                                                        <nav className="level is-mobile mb-1 px-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <img alt='' src={require('../../assets/location.png')} />
+                                                                </div>
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-6" style={{ fontSize: 12 }}>5922 Tony Highway Dallas</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                    <span className="icon" >
+                                                                        <i className="fa fa-share" color='#037ffc'></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+
+                                                        <nav className="level is-mobile px-2 pb-2">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <span className="icon">
+                                                                        <i className="fa fa-clock-o" color='#037ffc'></i>
+                                                                    </span>
+                                                                </div>
+                                                                <div className="level-item">
+                                                                    <p className="subtitle is-6" style={{ color: '#037ffc' }}>03:00 pm (in 4 hrs)</p>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+                                                    </article>
                                                 </div>
                                             </div>
-                                            <div className="level-right">
-                                                <span className="icon">
-                                                    <i className="fas fa-star" color='orange'></i>
-                                                </span>
-                                                <p className="subtitle is-6">4.9(365)</p>
-                                            </div>
-                                        </nav>
-                                        <p className="subtitle is-6 mb-0 px-2">Gym</p>
+                                        </div>
 
-                                        <nav className="level is-mobile mb-0 px-2">
-                                            <div className="level-left">
-                                            </div>
-                                            <div className="level-right">
-                                                <p className="subtitle is-6">4 ml</p>
-                                            </div>
-                                        </nav>
-
-                                        <nav className="level is-mobile mb-5 px-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <img alt='' src={require('../../assets/location.png')} />
-                                                </div>
-                                                <div className="level-item">
-                                                    <p className="subtitle is-6" style={{ fontSize: 12 }}>5922 Tony Highway Dallas</p>
-                                                </div>
-                                            </div>
-                                            <div className="level-right">
-                                                <div className="level-item">
-                                                    <span className="icon" >
-                                                        <i className="fa fa-share" color='#037ffc'></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </nav>
-
-                                        <nav className="level is-mobile px-2 pb-2">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <span className="icon">
-                                                        <i className="fa fa-clock-o" color='#037ffc'></i>
-                                                    </span>
-                                                </div>
-                                                <div className="level-item">
-                                                    <p className="subtitle is-6" style={{ color: '#037ffc' }}>03:00 pm (in 4 hrs)</p>
-                                                </div>
-                                            </div>
-                                        </nav>
-                                    </article>
+                                    </div>
                                 </div>
+                            </section>
+                        </AppointmentItem>
 
-                            </div>
-                        </div>
+                    </AppointmentSection>
 
-                    </div>
                 </div>
             </section>
-
-
 
             <section className="section pt-0 pb-0">
                 <div className="container">
